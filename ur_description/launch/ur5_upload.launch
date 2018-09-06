@@ -1,5 +1,6 @@
 <?xml version="1.0"?>
 <launch>
   <arg name="yaml_config" default="$(find ur_description)/config/ur5_default.yaml"/>
-  <param name="robot_description" command="$(find xacro)/xacro --inorder '$(find ur_description)/urdf/ur5_robot_yaml.urdf.xacro' yaml_config:=$(arg yaml_config)" />
+
+  <param name="robot_description" command="$(find xacro)/xacro --inorder '$(find ur_description)/urdf/ur5_robot.urdf.xacro' yaml_config:=$(arg yaml_config)" />
 </launch>
