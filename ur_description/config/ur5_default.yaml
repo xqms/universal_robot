@@ -44,7 +44,7 @@ dh_parameters:
 
 offsets:
   shoulder_offset: 0.13585 # measured from model
-  elbow_offset: -0.119 # measured from model
+  elbow_offset: -0.1197 # measured from model
 
 inertia_parameters:
   base_mass: 4.0  # This mass might be incorrect
