@@ -68,12 +68,12 @@
     <xacro:property name="wrist_2_mass" value="${__inertia_parameters['wrist_2_mass']}" scope="parent"/>
     <xacro:property name="wrist_3_mass" value="${__inertia_parameters['wrist_3_mass']}" scope="parent"/>
     <!-- center of mass -->
-    <xacro:property name="__shoulder_cog" value="${__inertia_parameters['center_of_mass']['shoulder_cog']}"/>
-    <xacro:property name="__upper_arm_cog" value="${__inertia_parameters['center_of_mass']['upper_arm_cog']}"/>
-    <xacro:property name="__forearm_cog" value="${__inertia_parameters['center_of_mass']['forearm_cog']}"/>
-    <xacro:property name="__wrist_1_cog" value="${__inertia_parameters['center_of_mass']['wrist_1_cog']}"/>
-    <xacro:property name="__wrist_2_cog" value="${__inertia_parameters['center_of_mass']['wrist_2_cog']}"/>
-    <xacro:property name="__wrist_3_cog" value="${__inertia_parameters['center_of_mass']['wrist_3_cog']}"/>
+    <xacro:property name="__shoulder_cog" value="${__inertia_parameters['center_of_mass']['shoulder_cog']}" scope="parent"/>
+    <xacro:property name="__upper_arm_cog" value="${__inertia_parameters['center_of_mass']['upper_arm_cog']}" scope="parent"/>
+    <xacro:property name="__forearm_cog" value="${__inertia_parameters['center_of_mass']['forearm_cog']}" scope="parent"/>
+    <xacro:property name="__wrist_1_cog" value="${__inertia_parameters['center_of_mass']['wrist_1_cog']}" scope="parent"/>
+    <xacro:property name="__wrist_2_cog" value="${__inertia_parameters['center_of_mass']['wrist_2_cog']}" scope="parent"/>
+    <xacro:property name="__wrist_3_cog" value="${__inertia_parameters['center_of_mass']['wrist_3_cog']}" scope="parent"/>
 
     <xacro:property name="shoulder_cog" value="${__shoulder_cog['x']} ${__shoulder_cog['y']} ${__shoulder_cog['z']}" scope="parent"/>
     <xacro:property name="upper_arm_cog" value="${__upper_arm_cog['x']} ${__upper_arm_cog['y']} ${__upper_arm_cog['z']}" scope="parent"/>
