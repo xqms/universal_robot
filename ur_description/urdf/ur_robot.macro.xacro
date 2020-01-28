@@ -65,7 +65,7 @@
         </geometry>
       </collision>
       <xacro:cylinder_inertial radius="${shoulder_inertia_radius}" length="${shoulder_inertia_length}" mass="${shoulder_mass}">
-        <origin xyz="0.0 0.0 0.0" rpy="0 0 0" />
+        <origin xyz="${shoulder_cog}" rpy="0 0 0" />
       </xacro:cylinder_inertial>
     </link>
 
@@ -97,7 +97,7 @@
         </geometry>
       </collision>
       <xacro:cylinder_inertial radius="${upperarm_inertia_radius}" length="${upper_arm_length}" mass="${upper_arm_mass}">
-        <origin xyz="0.0 ${-upper_arm_inertia_offset} ${upper_arm_length/2.0}" rpy="0 0 0" />
+        <origin xyz="${upper_arm_cog}" rpy="0 0 0" />
       </xacro:cylinder_inertial>
     </link>
 
@@ -129,7 +129,7 @@
         </geometry>
       </collision>
       <xacro:cylinder_inertial radius="${forearm_inertia_radius}" length="${forearm_length}"  mass="${forearm_mass}">
-        <origin xyz="0.0 0.0 ${forearm_length/2.0}" rpy="0 0 0" />
+        <origin xyz="${forearm_cog}" rpy="0 0 0" />
       </xacro:cylinder_inertial>
     </link>
 
@@ -161,7 +161,7 @@
         </geometry>
       </collision>
       <xacro:cylinder_inertial radius="${wrist_1_inertia_radius}" length="${wrist_1_inertia_length}"  mass="${wrist_1_mass}">
-        <origin xyz="0.0 ${wrist_1_length} 0.0" rpy="0 0 0" />
+        <origin xyz="${wrist_1_cog}" rpy="0 0 0" />
       </xacro:cylinder_inertial>
     </link>
 
@@ -193,7 +193,7 @@
         </geometry>
       </collision>
       <xacro:cylinder_inertial radius="${wrist_2_inertia_radius}" length="${wrist_2_inertia_length}"  mass="${wrist_2_mass}">
-        <origin xyz="0.0 0.0 ${wrist_2_length}" rpy="0 0 0" />
+        <origin xyz="${wrist_2_cog}" rpy="0 0 0" />
       </xacro:cylinder_inertial>
     </link>
 
@@ -225,7 +225,7 @@
         </geometry>
       </collision>
       <xacro:cylinder_inertial radius="${wrist_3_inertia_radius}" length="${wrist_3_inertia_length}"  mass="${wrist_3_mass}">
-        <origin xyz="0.0 ${wrist_3_length - wrist_3_inertia_length/2} 0.0" rpy="${pi/2} 0 0" />
+        <origin xyz="${wrist_3_cog}" rpy="${pi/2} 0 0" />
       </xacro:cylinder_inertial>
     </link>
 
